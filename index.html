@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ES6 FEATURE TEST</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h1>ES6 Feature Testing</h1>
+        <h3>Client-Side Dependent</h3>
+        <p>This is a statically hosted site used to test specific features of es6 on different clients.</p>
+        <p>Although there are es6 compatability charts online, there are a few key clients missing.</p>
+    </div>
+    <div>
+        <h4>Specifically, this site aims to test its JavaScript on the following platforms:</h4>
+        <ol>
+            <li>Android: 6.0 -- Native Android Browser, Chrome Mobile, Firefox Mobile, Others...</li>
+            <li>Android: 7.0 -- Native Android Browser, Chrome Mobile, Firefox Mobile, Others...</li>
+            <li>Others...</li>
+        </ol>
+    </div>
+    <div>
+        <h4>The major features we will test for are:</h4>
+        <ul>
+            <li>Basic use of let statments.</li>
+            <li>Basic use of arrow functions.</li>
+            <li>Template strings & string interpolation.</li>
+            <li>Basic use of classes.</li>
+        </ul>
+    </div>
+    <div id="button-one-div">
+        <button id="button-one">Let Declaration Test</button>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#button-one").click(function() {
+                $("#button-one-div").css("background-color", "blue");
+            });
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
