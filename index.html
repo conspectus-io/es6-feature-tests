@@ -38,8 +38,19 @@
         <p>Let Statement Test</p>
         <h6>H6 Heading Tag</h6>
     </div>
+    <div id="nobutton-one-div">
+        <p>Nothing here</p>
+        <h6>H6 Heading Tag</h6>
+    </div>
+    <div id="nobutton-two-div">
+        <p>Regular Statement Test</p>
+        <h6>H6 Heading Tag</h6>
+    </div>
     <div id="button-three-div">
         <button id="button-three" onclick="normalFuncTest()">ES5 Function Test</button>
+    </div>
+    <div>
+        <h3>Function Tests</h3>
     </div>
     <div id="button-four-div">
         <button id="button-four" onclick="arrowTest()">Arrow Function Test</button>
@@ -58,6 +69,15 @@
             buttonTwoDiv.style.width = "200px";
             buttonTwoDiv.style.height = "200px";
             buttonTwoDiv.style.color = "#00AA00";
+        }
+
+        // Reg statement test
+        var noButtonDivTwo = document.getElementById("nobutton-two-div");
+        noButtonDivTwo.onclick = function() {
+            noButtonDivTwo.style.width = "200px";
+            noButtonDivTwo.style.height = "300px";
+            noButtonDivTwo.style.color = "#FFFFFF"
+            noButtonDivTwo.style.backgroundColor = "#982298";
         }
 
         // ES5 function test
