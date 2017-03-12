@@ -32,14 +32,35 @@
         </ul>
     </div>
     <div id="button-one-div">
-        <button id="button-one">Let Declaration Test</button>
+        <button id="button-one">jQuery Control Test</button>
+    </div>
+    <div id="button-two-div">
+        <p>Let Statement Test</p>
+        <h6>H6 Heading Tag</h6>
+    </div>
+    <div id="button-three-div">
+        <button id="button-three" onclick="arrowTest()">Arrow Function Test</button>
     </div>
     <script>
+        // Control Experiment Using jQuery
         $(document).ready(function() {
             $("#button-one").click(function() {
                 $("#button-one-div").css("background-color", "blue");
             });
         });
+
+        // Basic let statement test
+        let buttonTwoDiv = document.getElementById("button-two-div");
+        buttonTwoDiv.onclick = function() {
+            buttonTwoDiv.style.width = "200px";
+            buttonTwoDiv.style.height = "200px";
+            buttonTwoDiv.style.color = "#00AA00";
+        }
+
+        // Basic arrow function test
+        let arrowTest = () => {
+            alert("Arrow Function Excecuted.");
+        }
     </script>
     <script src="index.js"></script>
 </body>
